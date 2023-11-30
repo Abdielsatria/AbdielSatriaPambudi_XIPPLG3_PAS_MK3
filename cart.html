@@ -1,0 +1,154 @@
+<!-- Pendefinisian jenis dokumen HTML dan penambahan atribut bahasa -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Pengaturan karakter set dan skala tampilan untuk responsif -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Menambahkan script eksternal untuk animasi scroll menggunakan ScrollReveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <!-- Menambahkan tautan ke file CSS eksternal -->
+  <link rel="stylesheet" href="./css/styles.css" />
+  <!-- Menentukan judul halaman -->
+  <title>Cart - Exclusive E-Commerce Website</title>
+</head>
+
+<body>
+  <!-- Bagian atas halaman dengan informasi promo -->
+  <div class="top_nav">
+    <div class="container top_nav_container">
+      <div class="top_nav_wrapper">
+        <!-- Paragraf untuk informasi promo -->
+        <p class="tap_nav_p">
+          Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+        </p>
+        <!-- Tautan untuk menuju halaman belanja -->
+        <a href="#" class="top_nav_link">SHOP NOW</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigasi utama dengan logo, menu, pencarian, dan ikon keranjang -->
+  <nav class="nav">
+    <div class="container nav_container">
+      <!-- Logo situs -->
+      <a href="#" class="nav_logo">EXCLUSIVE</a>
+      <!-- Daftar menu utama -->
+      <ul class="nav_list">
+        <li class="nav_item"><a href="/" class="nav_link">Home</a></li>
+        <li class="nav_item"><a href="#" class="nav_link">About</a></li>
+        <li class="nav_item"><a href="#" class="nav_link">Contact</a></li>
+        <li class="nav_item">
+          <!-- Tautan menuju halaman pendaftaran -->
+          <a href="./sign-up.html" class="nav_link">Sign up</a>
+        </li>
+      </ul>
+      <!-- Elemen untuk formulir pencarian, ikon hati, dan ikon keranjang -->
+      <div class="nav_items">
+        <form action="#" class="nav_form">
+          <input
+            type="text"
+            class="nav_input"
+            placeholder="search here...." />
+          <img src="./image/search.png" alt="" class="nav_search" />
+        </form>
+        <img src="./image/heart.png" alt="" class="nav_heart" />
+        <!-- Tautan menuju halaman keranjang -->
+        <a href="/cart.html">
+          <img src="./image/cart.png" alt="" class="nav_cart" />
+        </a>
+      </div>
+      <!-- Ikona hamburger untuk tampilan layar kecil -->
+      <span class="hamburger">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6">
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </span>
+    </div>
+  </nav>
+
+  <!-- Navigasi untuk tampilan layar kecil -->
+  <nav class="mobile_nav mobile_nav_hide">
+    <ul class="mobile_nav_list">
+      <li class="mobile_nav_item">
+        <a href="/" class="mobile_nav_link">Home</a>
+      </li>
+      <li class="mobile_nav_item">
+        <a href="#" class="mobile_nav_link">About</a>
+      </li>
+      <li class="mobile_nav_item">
+        <a href="#" class="mobile_nav_link">Contact</a>
+      </li>
+      <li class="mobile_nav_item">
+        <a href="./sign-up.html" class="mobile_nav_link">Sign Up</a>
+      </li>
+      <li class="mobile_nav_item">
+        <a href="/cart.html" class="mobile_nav_link">Cart</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Bagian konten untuk halaman keranjang -->
+  <section class="section">
+    <div class="container">
+      <div class="cart">
+        <!-- Header untuk kolom-kolom pada halaman keranjang -->
+        <div class="cart_header">
+          <p class="cart_header_id">Product ID</p>
+          <p class="cart_header_title">Product Title</p>
+          <p class="cart_header_image">Product Image</p>
+          <p class="cart_header_price">Price</p>
+          <p class="cart_header_delete">Delete</p>
+        </div>
+        <!-- Daftar item pada keranjang -->
+        <div class="cart-items"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bagian footer dengan informasi situs dan menu bantuan -->
+  <footer class="footer">
+    <div class="container footer_container">
+      <!-- Bagian informasi situs -->
+      <div class="footer_item">
+        <a href="#" class="footer_logo">Exclusive</a>
+        <div class="footer_p">
+          Sponsor Dari SMK Telkom Purwokerto
+        </div>
+      </div>
+      <!-- Bagian menu bantuan -->
+      <div class="footer_item">
+        <h3 class="footer_item_titl">Support</h3>
+        <ul class="footer_list">
+          <li class="li footer_list_item">Stockholm, Sweden</li>
+          <li class="li footer_list_item">email@gmail.com</li>
+          <li class="li footer_list_item">+46 123 456 78</li>
+          <li class="li footer_list_item">+46 72 345 67</li>
+        </ul>
+      </div>
+      <!-- Bagian menu bantuan -->
+      <div class="footer_item">
+        <h3 class="footer_item_titl">Support</h3>
+        <ul class="footer_list">
+          <li class="li footer_list_item">Account</li>
+          <li class="li footer_list_item">Login / Register</li>
+          <li class="li footer_list_item">Cart</li>
+          <li class="li footer_list_item">Shop</li>
+        </ul>
+      </div>
+      <!-- Bagian menu bantuan -->
+      <div class="footer_item">
+        <h3 class="footer_item_titl">Support</h3>
+        <ul class="footer_list">
+          <li class="li footer_list_item">Privacy policy</li>
+          <li class="li footer
